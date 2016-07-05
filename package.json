@@ -2,7 +2,7 @@
   "name": "react-proptype-autocomplete",
   "version": "0.0.1",
   "description": "Autocomplete props for components in your IDE (atom)",
-  "main": "index.js",
+  "main": "./lib/main.js",
   "dependencies": {
     "react-docgen": "^2.9.1",
     "shelljs": "^0.7.0",
@@ -13,6 +13,16 @@
   },
   "devDependencies": {
     "react-toolbox": "^1.0.1"
+  },
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "getProvider"
+      }
+    }
+  },
+  "engines": {
+    "atom": "*"
   },
   "scripts": {
     "generate": "node generate-completions.js --src 'node_modules/react-toolbox/components/**/*.js'",
