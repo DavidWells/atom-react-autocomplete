@@ -1,8 +1,12 @@
 # React propTypes autocomplete
 
-Autocomplete prop types for components
+Autocomplete prop types for any react component. DX for the win!
 
 ![Demo](demo.gif)
+
+- PropType autocompletion!
+- Inline links to component documentation!
+- your feature here!
 
 ## Install
 1. Clone this repo into your atom packages folder: `/Users/YOUR_USER_NAME/.atom/packages`
@@ -12,6 +16,11 @@ For your own component autocompletions run `node generate-completions.js --src '
 
 `completions.json` is what the atom plugin uses to auto complete your props
 
+## How does this work?
+
+[React Docgen](https://github.com/reactjs/react-docgen) generates data that is parsed into readable tokens (`completions.json`) for consumption of the atom autocomplete+ [provider](https://github.com/atom/autocomplete-plus/wiki/Provider-API) (see `lib/provider` for how the provider works)
+
+
 # Todo:
 - [] Get this working as standalone CLI
 - [] Separate CLI from Atom plugin
@@ -20,6 +29,10 @@ For your own component autocompletions run `node generate-completions.js --src '
 - [] Make custom docs link pluggable
 - [] Generate output for sublime text
 - [] ... ?
+
+## Atom plugin
+
+The atom plugin uses the autocomplete-plus https://github.com/atom/autocomplete-plus/wiki/Provider-API
 
 # Inspiration
 
