@@ -2,6 +2,8 @@
 
 Autocomplete prop types for components
 
+![Demo](demo.gif)
+
 ## Install
 1. Clone this repo into your atom packages folder: `/Users/YOUR_USER_NAME/.atom/packages`
 2. Run `npm i` to install deps then `npm run generate` for react-toolbox autocompletions
