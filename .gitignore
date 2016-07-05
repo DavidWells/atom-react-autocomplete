@@ -1,0 +1,4 @@
+.DS_file
+node_modules/
+completions.json
+react-doc-gen-output.json

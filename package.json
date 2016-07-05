@@ -1,0 +1,24 @@
+{
+  "name": "react-proptype-autocomplete",
+  "version": "0.0.1",
+  "description": "Autocomplete props for components in your IDE (atom)",
+  "main": "index.js",
+  "dependencies": {
+    "react-docgen": "^2.9.1",
+    "shelljs": "^0.7.0",
+    "yargs": "^4.7.1"
+  },
+  "bin": {
+    "rc-autocomplete": "generator.js"
+  },
+  "devDependencies": {
+    "react-toolbox": "^1.0.1"
+  },
+  "scripts": {
+    "gen": "node docgen.js --src 'node_modules/react-toolbox/components/**/*.js'",
+    "makeTokens": "node generator.js --output ./generated.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Wells",
+  "license": "MIT"
+}
