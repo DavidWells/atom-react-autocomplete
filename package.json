@@ -9,13 +9,13 @@
     "yargs": "^4.7.1"
   },
   "bin": {
-    "rc-autocomplete": "generator.js"
+    "rc-autocomplete": "generate-completions.js"
   },
   "devDependencies": {
     "react-toolbox": "^1.0.1"
   },
   "scripts": {
-    "gen": "node docgen.js --src 'node_modules/react-toolbox/components/**/*.js'",
+    "gen": "node generate-completions.js --src 'node_modules/react-toolbox/components/**/*.js'",
     "makeTokens": "node generator.js --output ./generated.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
