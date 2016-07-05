@@ -15,7 +15,7 @@
     "react-toolbox": "^1.0.1"
   },
   "scripts": {
-    "gen": "node generate-completions.js --src 'node_modules/react-toolbox/components/**/*.js'",
+    "generate": "node generate-completions.js --src 'node_modules/react-toolbox/components/**/*.js'",
     "makeTokens": "node generator.js --output ./generated.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

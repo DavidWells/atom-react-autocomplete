@@ -2,12 +2,11 @@
 
 Autocomplete prop types for components
 
-1. Parser
-2. Atom Plugin
+## Install
+1. Clone this repo into your atom packages folder: `/Users/davidwells/.atom/packages`
+2. Inside your project run `rc-autocomplete --src 'path_to_your_components/**/*.js'` to generate your `completions.json` file
 
-Inside your project run `rc-autocomplete ./src/components/` to generate your completions.json file
-
-Atom will look for this file in your project
+`completions.json` is what the atom plugin uses to auto complete your props
 
 # Todo:
 - [] Update autocomplete to support values of props
