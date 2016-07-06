@@ -2,3 +2,4 @@
 node_modules/
 completions.json
 react-doc-gen-output.json
+ref.json

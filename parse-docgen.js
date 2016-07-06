@@ -9,17 +9,28 @@ var path = require('path')
  */
 function generateCompletions() {
   var tokenFile = JSON.parse(fs.readFileSync(__dirname + '/react-doc-gen-output.json', 'utf-8'))
-
   var completions = {
-    tags: {}
+    components: {}
   }
   for (var key in tokenFile) {
     var componentName = path.basename(key, '.js')
-    if(tokenFile[key].props) {
-      completions.tags[componentName] = {
-        attributes: Object.keys(tokenFile[key].props)
-      }
+    if(!completions.components[componentName]) {
+      completions.components[componentName] = {}
+    } else {
+      console.log('component name collision')
     }
+
+    if(tokenFile[key].description) {
+      // set description of component
+      completions.components[componentName].description = 'test'
+    }
+
+    if(tokenFile[key].props) {
+      // set props of component
+      completions.components[componentName].attributes = Object.keys(tokenFile[key].props)
+      completions.components[componentName].props = tokenFile[key].props
+    }
+
   }
 
   var dest = path.join(__dirname, 'completions.json')
