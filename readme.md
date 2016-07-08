@@ -12,17 +12,18 @@ DX for the win!
 
 ## Install
 
-1. Search for the `atom-react-autocomplete` package and install
-2. `npm i react-autocomplete-cli --save-dev` in your project
-3. Create `.importjs.json` file in your project root dir and specify your component paths. See example below
+1. Search for the `atom-react-autocomplete` package in Atom and install
+2. `npm i react-autocomplete-cli --save-dev` in your project root
+3. Create a `.importjs.json` file in your project root directory & specify your component paths. (See example below)
 4. in your project add `generate: "rc-autocomplete"` to your npm scripts
+5. Run `npm run generate` to generate the projects autocompletions
 
-Step 4 generates the `completions.json` file used by the atom plugin.
+`completions.json` file used by the atom plugin, you can .gitignore it or include for others using the atom plugin
 
 If you have `completions.json` generated in your root directory and autocompletions are not working. Restart Atom and it should pickup the completions file
 
+`.importjs.json` example
 ```
-// .importjs.json example
 {
   "lookupPaths": [
     "node_modules/react-toolbox/components/**/*.js",
@@ -31,8 +32,8 @@ If you have `completions.json` generated in your root directory and autocompleti
 }
 ```
 
+`package.json` example
 ```
-// package.json example
 // the `npm run generate` command will look at .importjs.json lookupPaths
 "scripts": {
   "singlePath": "rc-autocomplete --src 'node_modules/react-toolbox/components/**/*.js'",
