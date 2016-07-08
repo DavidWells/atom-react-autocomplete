@@ -23,11 +23,9 @@ DX for the win!
 
 `completions.json` file used by the atom plugin, you can .gitignore it or include for others using the atom plugin
 
-** Protip ** If you do commit the `completions.json` file to your project, this will enable others to not have to run through these setup steps! DX!
+**Protip** If you do commit the `completions.json` file to your project other devs on your team will not need to run the setup steps. They can just install the atom plugin and be off to the races.
 
-If you have `completions.json` generated in your root directory and autocompletions are not working.
-
-Restart Atom and it should pickup the completions file
+If you have `completions.json` generated in your root directory and autocompletions are not working, restart Atom and it should pickup the completions file.
 
 `.importjs.json` example
 ```
@@ -48,7 +46,7 @@ Restart Atom and it should pickup the completions file
 }
 ```
 
-The CLI for this can be found here: https://github.com/DavidWells/react-autocomplete-cli
+The [CLI](https://github.com/DavidWells/react-autocomplete-cli) for this can be found here: https://github.com/DavidWells/react-autocomplete-cli
 
 ## How does this work?
 
