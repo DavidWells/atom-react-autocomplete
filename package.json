@@ -8,12 +8,6 @@
     "shelljs": "^0.7.0",
     "yargs": "^4.7.1"
   },
-  "bin": {
-    "rc-autocomplete": "generate-completions.js"
-  },
-  "devDependencies": {
-    "react-toolbox": "^1.0.1"
-  },
   "providedServices": {
     "autocomplete.provider": {
       "versions": {
@@ -25,8 +19,6 @@
     "atom": "*"
   },
   "scripts": {
-    "generate": "node generate-completions.js --src 'node_modules/react-toolbox/components/**/*.js'",
-    "makeTokens": "node generator.js --output ./generated.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "David Wells",
