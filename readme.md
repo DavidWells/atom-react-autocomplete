@@ -57,13 +57,13 @@ The CLI for this can be found here: https://github.com/DavidWells/react-autocomp
 Configuration is the same as import-js [https://github.com/Galooshi/import-js#configuration](https://github.com/Galooshi/import-js#configuration) to enable future improvements and possible automated imports
 
 # Todo:
-- [x] Get this working as standalone CLI
-- [x] Separate CLI from Atom plugin
-- [] Update autocomplete to support values of props
-- [] Make autocomplete output pluggable (custom prompts)
-- [] Make custom docs link pluggable
-- [] Generate output for sublime text
-- [] ... ?
+[x] Get this working as standalone CLI
+[x] Separate CLI from Atom plugin
+[] Update autocomplete to support values of props
+[] Make autocomplete output pluggable (custom prompts)
+[] Make custom docs link pluggable
+[] Generate output for sublime text
+[] ... ?
 
 ## About the autocompletion
 
