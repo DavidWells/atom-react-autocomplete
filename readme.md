@@ -1,10 +1,10 @@
-# React propTypes autocompletion atom plugin
+# [React autocompletion atom plugin](https://atom.io/packages/atom-react-autocomplete)
 
 Autocomplete component names & prop types for any react component used in your project.
 
 DX for the win!
 
-### [Video](http://www.youtube.com/watch?v=UhR0JuWWhGI)
+### [Demo Video](http://www.youtube.com/watch?v=UhR0JuWWhGI)
 
 ![Demo](https://cloud.githubusercontent.com/assets/532272/16675986/dffd63ae-447a-11e6-9ca7-2076d514a8e9.gif)
 
@@ -57,13 +57,14 @@ The CLI for this can be found here: https://github.com/DavidWells/react-autocomp
 Configuration is the same as import-js [https://github.com/Galooshi/import-js#configuration](https://github.com/Galooshi/import-js#configuration) to enable future improvements and possible automated imports
 
 # Todo:
-[x] Get this working as standalone CLI
-[x] Separate CLI from Atom plugin
-[] Update autocomplete to support values of props
-[] Make autocomplete output pluggable (custom prompts)
-[] Make custom docs link pluggable
-[] Generate output for sublime text
-[] ... ?
+
+- [x] Get this working as standalone CLI
+- [x] Separate CLI from Atom plugin
+- [] Update autocomplete to support values of props
+- [] Make autocomplete output pluggable (custom prompts)
+- [] Make custom docs link pluggable
+- [] Generate output for sublime text
+- [] ... ?
 
 ## About the autocompletion
 
