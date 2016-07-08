@@ -6,7 +6,6 @@
   "main": "./lib/main.js",
   "dependencies": {
     "react-docgen": "^2.9.1",
-    "shelljs": "^0.7.0",
     "yargs": "^4.7.1"
   },
   "providedServices": {
