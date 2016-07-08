@@ -2,6 +2,7 @@
   "name": "atom-react-autocomplete",
   "version": "0.0.1",
   "description": "Autocomplete React component props without static typing",
+  "repository": "https://github.com/DavidWells/atom-react-autocomplete",
   "main": "./lib/main.js",
   "dependencies": {
     "react-docgen": "^2.9.1",
