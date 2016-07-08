@@ -1,6 +1,8 @@
-# Atom React PropTypes autocomplete Plugin
+# React propTypes autocompletion atom plugin
 
-Autocomplete prop types for any react component. DX for the win!
+Autocomplete component names & prop types for any react component used in your project.
+
+DX for the win!
 
 ![Demo](https://cloud.githubusercontent.com/assets/532272/16675986/dffd63ae-447a-11e6-9ca7-2076d514a8e9.gif)
 
@@ -9,9 +11,16 @@ Autocomplete prop types for any react component. DX for the win!
 - your feature here!
 
 ## Install
+
 1. Search for the `atom-react-autocomplete` package and install
 2. `npm i react-autocomplete-cli --save-dev` in your project
-3. Create `.importjs.json` file in your project root dir and specify your component paths
+3. Create `.importjs.json` file in your project root dir and specify your component paths. See example below
+4. in your project add `generate: "rc-autocomplete"` to your npm scripts
+
+Step 4 generates the `completions.json` file used by the atom plugin.
+
+If you have `completions.json` generated in your root directory and autocompletions are not working. Restart Atom and it should pickup the completions file
+
 ```
 // .importjs.json example
 {
@@ -21,13 +30,15 @@ Autocomplete prop types for any react component. DX for the win!
   ]
 }
 ```
-4. Run `node_modules/.bin/rc-autocomplete` to generate your completions for the projects
-5. in your project add `generate: "rc-autocomplete"` to your npm scripts
 
-`completions.json` is what the atom plugin uses to auto complete your props
-
-If you have `completions.json` generated in your root directory and autocompletions are not working. Restart Atom and it should pickup the completions file
-
+```
+// package.json example
+// the `npm run generate` command will look at .importjs.json lookupPaths
+"scripts": {
+  "singlePath": "rc-autocomplete --src 'node_modules/react-toolbox/components/**/*.js'",
+  "generate": "rc-autocomplete"
+}
+```
 ## How does this work?
 
 [React Docgen](https://github.com/reactjs/react-docgen) generates data that is parsed into readable tokens (`completions.json`) for consumption of the atom autocomplete+ [provider](https://github.com/atom/autocomplete-plus/wiki/Provider-API) (see `lib/provider` for how the provider works)
