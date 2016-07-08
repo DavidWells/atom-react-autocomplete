@@ -40,6 +40,9 @@ If you have `completions.json` generated in your root directory and autocompleti
   "generate": "rc-autocomplete"
 }
 ```
+
+The CLI for this can be found here: https://github.com/DavidWells/react-autocomplete-cli
+
 ## How does this work?
 
 [React Docgen](https://github.com/reactjs/react-docgen) generates data that is parsed into readable tokens (`completions.json`) for consumption of the atom autocomplete+ [provider](https://github.com/atom/autocomplete-plus/wiki/Provider-API) (see `lib/provider` for how the provider works)
@@ -55,7 +58,7 @@ Configuration is the same as import-js [https://github.com/Galooshi/import-js#co
 - [] Generate output for sublime text
 - [] ... ?
 
-## About atom plugin
+## About the autocompletion
 
 The atom plugin uses the autocomplete-plus https://github.com/atom/autocomplete-plus/wiki/Provider-API
 
@@ -63,8 +66,8 @@ The atom plugin uses the autocomplete-plus https://github.com/atom/autocomplete-
 
 Thanks to atom https://github.com/atom/autocomplete-html/blob/master/lib/provider.coffee for the inspiration on building this
 
-Also:
+Also Props to:
 
 - https://twitter.com/davatron5000/status/731249986600456192
 - https://github.com/buzzfeed/solid-completions
-- https://github.com/Galooshi/atom-import-js/blob/a0da349ccd547c9b503da30f60e8ccd26439104d/lib/getImporter.js
+- https://github.com/Galooshi/atom-import-js/
