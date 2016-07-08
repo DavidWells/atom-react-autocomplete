@@ -4,6 +4,8 @@ Autocomplete component names & prop types for any react component used in your p
 
 DX for the win!
 
+### [Video](http://www.youtube.com/watch?v=UhR0JuWWhGI)
+
 ![Demo](https://cloud.githubusercontent.com/assets/532272/16675986/dffd63ae-447a-11e6-9ca7-2076d514a8e9.gif)
 
 - Component Name autocompletion
