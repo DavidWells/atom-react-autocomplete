@@ -1,7 +1,7 @@
 {
-  "name": "react-proptype-autocomplete",
+  "name": "atom-react-autocomplete",
   "version": "0.0.1",
-  "description": "Autocomplete props for components in your IDE (atom)",
+  "description": "Autocomplete React component props without static typing",
   "main": "./lib/main.js",
   "dependencies": {
     "react-docgen": "^2.9.1",
@@ -22,5 +22,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "David Wells",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DavidWells/atom-react-autocomplete/issues"
+  },
+  "homepage": "https://github.com/DavidWells/atom-react-autocomplete#readme",
 }
