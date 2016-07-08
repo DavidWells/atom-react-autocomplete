@@ -12,17 +12,22 @@ DX for the win!
 - PropType autocompletion and inline documentation
 - your feature here!
 
-## Install
+## Install Instructions
 
 1. Search for the `atom-react-autocomplete` package in Atom and install
 2. `npm i react-autocomplete-cli --save-dev` in your project root
 3. Create a `.importjs.json` file in your project root directory & specify your component paths. (See example below)
 4. in your project add `generate: "rc-autocomplete"` to your npm scripts
 5. Run `npm run generate` to generate the projects autocompletions
+6. Restart atom for it to source the completions file
 
 `completions.json` file used by the atom plugin, you can .gitignore it or include for others using the atom plugin
 
-If you have `completions.json` generated in your root directory and autocompletions are not working. Restart Atom and it should pickup the completions file
+** Protip ** If you do commit the `completions.json` file to your project, this will enable others to not have to run through these setup steps! DX!
+
+If you have `completions.json` generated in your root directory and autocompletions are not working.
+
+Restart Atom and it should pickup the completions file
 
 `.importjs.json` example
 ```
